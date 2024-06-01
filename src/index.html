@@ -82,8 +82,9 @@
     <div class="container px-4">
         <div class="row flex-lg-row-reverse align-items-center  py-5">
             <div class="col-12 col-lg-6">
-                <img src="https://imgur.com/sxbxff5.png" class="d-block mx-lg-auto img-fluid rounded mx-auto mb-4 mb-lg-0"
-                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                <img src="https://imgur.com/sxbxff5.png"
+                    class="d-block mx-lg-auto img-fluid rounded mx-auto mb-4 mb-lg-0" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center text-lg-start">Work At Jovian</h1>
@@ -93,17 +94,17 @@
                     300,000+ registered users.
                 </p>
 
-                <p class="lead"> 
+                <p class="lead">
                     We offer 2 industry focused bootcamps
                 </p>
                 <ol>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blanks">
+                        <a class="links-of-bootcamp" href="https://www.youtube.com/" target="_blanks">
                             Jovian Full Stack Bootcamp
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blanks">
+                        <a class="links-of-bootcamp" href="https://www.youtube.com/" target="_blanks">
                             Jovian Data Science Bootcamp
                         </a>
 
@@ -116,21 +117,194 @@
 
 
     <!--Job Opportunities-->
-    <div>
-        Job Opportunities
+    <div class="container px-4">
+        <h2 class="text-center mb-5">
+            Job Opportunities
+        </h2>
+        <!--JOBS LIST-->
+        <div class="d-md-none">
+            <div class="card  my-4">
+                <div class="card-body">
+                    <h5 class="card-title">Frontend Developer</h5>
+                    <h6 class="card-subtitle mb-1 text-body-secondary">Bengaluru, India . #12,000,000 </h6>
+                    <small class="card-text">Posted Mar 3 2023</small>
+
+                </div>
+            </div>
+
+            <div class="card  my-4">
+                <div class="card-body">
+                    <h5 class="card-title">Full Stack Developer</h5>
+                    <h6 class="card-subtitle mb-1 text-body-secondary">New Delhi, India . #15,000,000 </h6>
+                    <small class="card-text">Posted Mar 3 2023</small>
+
+                </div>
+            </div>
+
+            <div class="card  my-4">
+                <div class="card-body">
+                    <h5 class="card-title">Data Scientist</h5>
+                    <h6 class="card-subtitle mb-1 text-body-secondary">San Fracisco, USA . $175,000 </h6>
+                    <small class="card-text">Posted Mar 3 2023</small>
+
+                </div>
+            </div>
+
+            <div class="card  my-4">
+                <div class="card-body">
+                    <h5 class="card-title">ML Engineer</h5>
+                    <h6 class="card-subtitle mb-1 text-body-secondary">Remote . $85,000 </h6>
+                    <small class="card-text">Posted Mar 3 2023</small>
+
+                </div>
+            </div>
+        </div>
+
+        <!--JOB TABLE-->
+
+        <div class="d-none d-md-block col-lg-8 offset-lg-2">
+            <table class="table table-bordered table-striped">
+                <tr class="job-table-header table-primary text-center">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted On</th>
+                </tr>
+                <tr class="job-table-header table-primary text-center">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                <tr class="job-table-data">
+                    <td>Frontend Eng</td>
+                    <td>Banglaru</td>
+                    <td>India</td>
+                    <td>RS 12,000,000</td>
+                    <td>Mar 3, 2024</td>
+                </tr>
+                <tr class="job-table-data">
+                    <td>Full Stack Eng</td>
+                    <td>Delhi</td>
+                    <td>India</td>
+                    <td>RS 15,000,000</td>
+                    <td>Mar 3, 2024</td>
+                </tr>
+                <tr class="job-table-data">
+                    <td>Data Scientist</td>
+                    <td>San Fransico</td>
+                    <td>USA</td>
+                    <td>$175,000</td>
+                    <td>Mar 3, 2024</td>
+                </tr>
+                <tr class="job-table-data">
+                    <td>ML Engineer</td>
+                    <td colspan="2">Remote</td>
+                    <td>$80,000</td>
+                    <td>Mar 3, 2024</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 
 
     <!--Application Form-->
 
-    <div>
-        Application Form
+    <div class="container px-4 mt-5">
+        <h2 class="text-center">
+            Submit Your Application
+        </h2>
+
+        <form action="" class="col-lg-8 offset-lg-2">
+            <!--NAME-->
+            <div class="mb-3 col-sm-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Deo">
+
+            </div>
+
+
+            <!--EMAIL ADDRESS-->
+            <div class="mb-3 col-sm-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"> We'll never share your email with anyone</div>
+            </div>
+
+            <!--PHONE NUMBER-->
+            <div class="mb-3 col-sm-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+2347085191107">
+
+            </div>
+
+            <!--DATE OF BIRTH-->
+            <div class="mb-3 col-sm-6">
+                <label for="dob" class="form-label">Date Of Birth</label>
+                <input type="date" class="form-control" id="dob">
+
+            </div>
+
+            <!--POSITION-->
+            <div class="mb-3 col-sm-6">
+                <label for="position" class="form-label">Position Applied For</label>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected value="">Select a position</option>
+                    <option value="frontend developer">Frontend Developer</option>
+                    <option value="fullstack developer">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+
+
+            </div>
+
+            <!--RESUME-->
+
+            <div class="mb-3 col-sm-6">
+                <label for="resume" class="form-label">Upload Resume</label>
+                <input type="file" class="form-control" id="resume" required>
+
+            </div>
+
+            <!--COVER LETTER-->
+
+            <div class="mb-3">
+                <label for="resume" class="form-label">Cover Letter</label>
+                <textarea class="form-control" name="resume" id="resume" rows="5"
+                    placeholder="Why should we consider you for the job?" required></textarea>
+
+
+                <!--TERMS-->
+
+                <div class="mb-3 form-check">
+                    <label for="terms" class="form-check-label">I agree to the terms and conditions</label>
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+
+                </div>
+
+                <!--SUBMIT BUTTON-->
+
+                <button type="submit" class="btn btn-primary">
+                    Submit Application
+                </button>
+
+
+        </form>
     </div>
 
 
     <!--Footer-->
-    <div>
-        Footer
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-top pt-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Courses</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Programs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Youtube</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sign In</a></li>
+              
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Jovian, Swift Inc</p>
+          </footer>
     </div>
 
 
